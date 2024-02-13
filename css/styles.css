@@ -81,6 +81,10 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
 }
+.hero-button:hover,
+.hero-button:focus {
+  background: #404bbf;
+}
 .hero {
   background: #2e2f42;
 }
