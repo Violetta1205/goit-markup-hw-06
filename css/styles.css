@@ -29,6 +29,18 @@ a {
 button {
   cursor: pointer;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -193,7 +205,7 @@ body {
 /* ========= Page Our Team styles ========= */
 .page-team {
   background: #f4f4fd;
-  width: 120px 0;
+  padding: 120px 0;
 }
 .team-list {
   display: flex;
@@ -204,7 +216,9 @@ body {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   margin-bottom: 8px;
+  border-radius: 0px 0px 4px 4px;
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -217,8 +231,6 @@ body {
 }
 .team-personality {
   padding: 32px 0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 .team-list-title {
   font-weight: 500;
@@ -227,7 +239,6 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
@@ -239,7 +250,6 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
 }
 /* ========= /Page Our Team styles ========= */
 
@@ -293,7 +303,7 @@ body {
 /* ========= Page Footer styles ========= */
 .page-footer {
   background-color: #2e2f42;
-  padding-top: 100px 0;
+  padding: 100px 0;
 }
 
 .footer-logo-link {
