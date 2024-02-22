@@ -77,6 +77,14 @@ body {
   display: flex;
   gap: 40px;
 }
+.menu .menu-item-line::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  display: block;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -167,6 +175,12 @@ body {
 .hero {
   background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+    url(/images/people-office-fone.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-clip: border-box;
 }
 
 /* ========= /Page Hero styles ========= */
@@ -184,7 +198,19 @@ body {
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
 }
-.benefits-list-title {
+.benefits-list-item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.benefits-list-item .benefits-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
