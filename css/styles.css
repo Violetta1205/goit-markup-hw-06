@@ -274,6 +274,29 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.social-links-list {
+  display: flex;
+  margin-top: 8px;
+  gap: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.social-list-link {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
+
 /* ========= /Page Our Team styles ========= */
 
 /* ========= Page Our Portfolio styles ========= */
@@ -351,4 +374,39 @@ body {
   color: #f4f4fd;
   width: 264px;
 }
+.page-footer .container-links {
+  display: flex;
+}
+.footer-second-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-second-part {
+  margin-left: 120px;
+}
+.footer-list-link {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+}
+.footer-links-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-list-link:hover,
+.footer-list-link:focus {
+  background-color: #31d0aa;
+}
+
 /* ========= /Page Footer styles ========= */
