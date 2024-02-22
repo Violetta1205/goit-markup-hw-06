@@ -77,6 +77,7 @@ body {
   display: flex;
   gap: 40px;
 }
+
 .menu .menu-item-line::after {
   content: "";
   width: 48px;
@@ -85,6 +86,7 @@ body {
   background-color: #404bbf;
   border-radius: 2px;
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -167,18 +169,20 @@ body {
   display: block;
   border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
   background: #404bbf;
 }
-.hero {
+.hero .section {
   background: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
     url(/images/people-office-fone.jpg);
+  max-width: 1440px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-clip: border-box;
 }
@@ -240,6 +244,11 @@ body {
   width: calc((100% - 72px) / 4);
   margin-bottom: 8px;
   border-radius: 0px 0px 4px 4px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-title {
@@ -291,6 +300,8 @@ body {
   border: none;
   border-radius: 50%;
   display: flex;
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -399,6 +410,8 @@ body {
   border: none;
   border-radius: 50%;
   display: flex;
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-links-list {
   display: flex;
