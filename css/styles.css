@@ -140,6 +140,16 @@ body {
 /* ========= /Page Header styles ========= */
 
 /* ========= Page Hero styles ========= */
+.hero {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+    url(/images/people-office-fone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440px auto;
+  background-origin: border-box;
+}
 
 .hero-header {
   font-weight: 700;
@@ -174,17 +184,6 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background: #404bbf;
-}
-.hero .section {
-  background: #2e2f42;
-  padding: 188px 0;
-  background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
-    url(/images/people-office-fone.jpg);
-  max-width: 1440px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-clip: border-box;
 }
 
 /* ========= /Page Hero styles ========= */
