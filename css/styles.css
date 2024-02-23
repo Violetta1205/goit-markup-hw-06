@@ -368,6 +368,10 @@ body {
   overflow: hidden;
 }
 .overlay {
+  padding-top: 40px;
+  padding-bottom: 164px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
