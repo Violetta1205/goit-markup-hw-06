@@ -641,6 +641,9 @@ body {
 .modal-form-wrapper {
   margin-bottom: 8px;
 }
+.modal-form-wrapper-comment {
+  margin-bottom: 16px;
+}
 .modal-form-input-wrapper {
   position: relative;
 }
