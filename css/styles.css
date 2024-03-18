@@ -60,14 +60,15 @@ body {
   margin-bottom: 72px;
 }
 .container {
-  max-width: 288px;
+  max-width: 320px;
+  padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
   }
 }
 
@@ -212,6 +213,9 @@ body {
     font-size: 16px;
     letter-spacing: 0.02em;
   }
+  .logo {
+    margin-right: 76px;
+  }
 }
 /* ========= /Page Header styles ========= */
 .hero {
@@ -347,6 +351,8 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
 }
 .benefits-list-text {
   font-weight: 500;
@@ -363,11 +369,18 @@ body {
 
   .benefits-list {
     display: flex;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
     flex-wrap: wrap;
   }
   .benefits-list-item {
     width: calc((100% - 24px) / 2);
+  }
+  .benefits-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .benefits-list-item .benefits-list-title {
+    justify-content: flex-start;
   }
 }
 /*desktop benefits*/
@@ -485,15 +498,15 @@ body {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
     align-items: center;
     justify-content: center;
   }
-  .team-list-item {
-    margin-bottom: 72px;
+  .team-list-item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
-
 /*desktop team*/
 
 @media screen and (min-width: 1158px) {
@@ -691,7 +704,9 @@ body {
 .svg {
   fill: #f4f4fd;
 }
-
+.subscribe-part {
+  margin-bottom: 0;
+}
 .subscribe-part-description {
   font-weight: 500;
   font-size: 16px;
@@ -710,10 +725,9 @@ body {
 .email-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   padding-left: 16px;
-  margin-bottom: 16px;
   background: transparent;
   color: #fff;
   font-weight: 400;
@@ -772,6 +786,7 @@ body {
   .footer-link-part,
   .subscribe-part {
     align-items: flex-start;
+    margin-bottom: 0;
   }
   ..subscribe-part {
     margin-top: 0;
@@ -846,7 +861,7 @@ body {
   width: 288px;
   min-height: 623px;
   background: #fcfcfc;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 24px 16px 16px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -972,6 +987,7 @@ body {
   text-decoration: underline;
 }
 .modal-form-own-checkbox {
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -998,6 +1014,11 @@ body {
   .modal-form-own-checkbox {
   outline: 1px solid #4d5ae5;
 }
+.modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
 .modal-form-submit-button {
   border-radius: 4px;
   min-width: 169px;
@@ -1087,10 +1108,14 @@ body {
 .menu-nav-item:not(:last-child) {
   margin-bottom: 40px;
 }
+.link-line {
+  color: #4d5ae5;
+}
 .menu-link,
 .adress-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .menu-link:hover,
 .menu-nav-link:focus,
 .adress-link:hover,
