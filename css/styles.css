@@ -794,7 +794,7 @@ body {
     align-items: flex-start;
     margin-bottom: 0;
   }
-  ..subscribe-part {
+  .subscribe-part {
     margin-top: 0;
   }
   .footer-input-button {
